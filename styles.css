@@ -1,0 +1,72 @@
+body {
+    background-image: url(pata.jpg);
+}
+
+.container-home {
+    width: 70%;
+    background-color: #fff;
+    margin: 40px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px;
+}
+
+.container-home h1 {
+    color: #a43e69;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #e19a9a;
+}
+
+.input-container label {
+    margin: bottom 5px;
+    ;
+}
+
+.input-container input textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 3px solid #010000;
+    outline: color #d51967;
+    resize: vertical;
+    padding: 10px;
+}
+.input-container textarea{
+    height: auto;
+}
+.form-row {
+    display:flex;
+    justify-content: space-between;
+}
+
+.button-submit{
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-40{
+flex-basis: 40%;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.button-submit{
+    width: 100px;
+    border-radius: 8px;
+    color: #0fff;
+    background-color: #d51967;
+    margin-top: 10px;
+}
