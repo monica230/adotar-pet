@@ -70,3 +70,11 @@ flex-basis: 40%;
     background-color: #d51967;
     margin-top: 10px;
 }
+@media (max-width:0px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+.container-home{
+    width: 90%;
+}
