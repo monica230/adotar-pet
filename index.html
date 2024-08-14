@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="teste.css">
 </head>
 
 <body>
@@ -17,47 +17,53 @@
             <div class="input-container">
                 <label for="foto">Foto do pet<label>
                         <input type="url" id=foto />
-
             </div>
 
             <div class="form-row">
                 <div class="input-container" style="flex-basis: 40%;">
                     <label for="nome"> Nome do pet</label>
                     <input id="nome" placeholder="Digite o nome completo do pet" />
+                    <span id="error-nome" style="color: red;"></span>
                 </div>
+
                 <div class="input-container" style="flex-basis: 40%;">
                     <label for="idade"> Idade do pet</label>
                     <input id="idade" placeholder="Digite a idade do pet" />
                 </div>
-
             </div>
+
             <div class="input-container">
                 <label for="cor">Cor do pet </label>
                 <input type="color" id="cor" />
             </div>
+
             <div class="input-container">
                 <label for="descricao">Descricao </label>
                 <textarea id="descricao" rows="5"></textarea>
-                <div class="input-container">
-                    <label>Tipo</label>
-                    <select id="tipo">
-                        <option value=""></option>Selecione umma opção</option>
-                        <option value="Cachorro">Cachorros</option>
-                        <option value="Gatos">gatos</option>>
-                        <option value="Pássaros">Pássaros</option>
-                        <option value="Diversos">Diversos</option>
-                    </select>
-                </div>
-
-                <div class="button-container">
-                    <button class="button-submit" type="submit"> salvar</button>
-                </div>
-                <form>
             </div>
-            <footer class="footer-app">
-                <P></P>
 
-                <script src="cadastropts.js"></script>
+            <div class="input-container">
+                <label>Tipo</label>
+                <select id="tipo">
+                    <option value=""></option>Selecione umma opção</option>
+                    <option value="Cachorro">Cachorros</option>
+                    <option value="Gatos">gatos</option>>
+                    <option value="Pássaros">Pássaros</option>
+                    <option value="Diversos">Diversos</option>
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button class="button-submit" type="submit"> salvar</button>
+            </div>
+        </form>
+
+
+        <footer class="footer-app">
+            <P>Todos os direitos reservados a lab 365</P>
+        </footer>
+
+        <script src="cadastropts.js"></script>
 </body>
 
 </html>

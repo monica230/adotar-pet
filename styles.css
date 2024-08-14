@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(pata.jpg);
 }
@@ -26,13 +32,11 @@ body {
 
 .input-container label {
     margin: bottom 5px;
-    ;
 }
 
 .input-container input textarea,
 select {
     width: 100%;
-    box-sizing: border-box;
     height: 35px;
     border-radius: 8px;
     font-size: 18px;
@@ -48,7 +52,9 @@ select {
 
 .form-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #e19a9a;
 }
 
 .button-submit {
@@ -69,15 +75,9 @@ select {
 
 .button-submit {
     width: 100px;
+    background-color: #d51967;
     border-radius: 8px;
     color: #0fff;
-    background-color: #d51967;
+
     margin-top: 10px;
-}
-
-
-@media (max-width:0px) {
-    .form-row {
-        flex-direction: column;
-    }
 }
