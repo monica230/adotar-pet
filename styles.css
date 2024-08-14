@@ -29,7 +29,8 @@ body {
     ;
 }
 
-.input-container input textarea {
+.input-container input textarea,
+select {
     width: 100%;
     box-sizing: border-box;
     height: 35px;
@@ -40,41 +41,43 @@ body {
     resize: vertical;
     padding: 10px;
 }
-.input-container textarea{
+
+.input-container textarea {
     height: auto;
 }
+
 .form-row {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
-.button-submit{
+.button-submit {
     display: flex;
     justify-content: center;
 
 }
 
-.flex-40{
-flex-basis: 40%;
+.flex-40 {
+    flex-basis: 40%;
 }
-.button-container{
+
+.button-container {
     display: flex;
     justify-content: flex-end;
 }
 
 
-.button-submit{
+.button-submit {
     width: 100px;
     border-radius: 8px;
     color: #0fff;
     background-color: #d51967;
     margin-top: 10px;
 }
+
+
 @media (max-width:0px) {
     .form-row {
         flex-direction: column;
     }
-}
-.container-home{
-    width: 90%;
 }
