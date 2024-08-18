@@ -1,50 +1,46 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-image: url(pata.jpg);
-
+    background-image: url('assets/bg.jpg');
 }
 
 .container-home {
     width: 70%;
-    background-color: #fff;
-    margin: 260px auto;
+    background-color: #FFF;
+    margin: 40px auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     padding: 10px;
 }
 
 .container-home h1 {
-    color: #a43e69;
+    color: #802600;
     font-size: 24px;
     text-align: center;
-
 }
 
 .input-container {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    background-color: #f5f5f5;
+    margin: 5px 0;
 }
 
 .input-container label {
-    margin: bottom 5px;
+    margin-bottom: 5px;
 }
 
-.input-container input textarea,
+.option-bold {
+    font-weight: bold;
+}
+
+.input-container input,
+textarea,
 select {
     width: 100%;
+    box-sizing: border-box;
     height: 35px;
     border-radius: 8px;
     font-size: 18px;
-    border: 3px solid #010000;
-    outline: color #d51967;
+    border: 1px solid #a9480b;
+    outline-color: #802600;
     resize: vertical;
-    padding: 10px;
 }
 
 .input-container textarea {
@@ -53,19 +49,12 @@ select {
 
 .form-row {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #f5f5f5      ;
+    justify-content: space-between;
+    // margin: 10px;
 }
 
-.button-submit {
-    display: flex;
-    justify-content: center;
-
-}
-
-.flex-40 {
-    flex-basis: 40%;
+.flex-45 {
+    flex-basis: 45%;
 }
 
 .button-container {
@@ -73,12 +62,83 @@ select {
     justify-content: flex-end;
 }
 
-
 .button-submit {
     width: 100px;
-    background-color: #d51967;
     border-radius: 8px;
-    color: #0fff;
-
+    height: 34px;
+    background-color: #FFF;
+    color: #802600;
     margin-top: 10px;
+    border: 1px solid #802600;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    background-color: #802600;
+    color: #FFF;
+}
+
+.footer-app {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #a9480b;
+}
+
+.footer-app p {
+    text-align: center;
+    color: #fff;
+    font-size: 18x;
+}
+
+@media (max-width: 800px) {
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .container-home {
+        width: 90%;
+    }
+}
+
+/*  CSS da tela de listagem pets  */
+.container-pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.item-pet {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-pet img {
+    object-fit: cover;
+}
+
+.menu {
+    height: 50px;
+    background-color: #802600;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu a {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
 }
